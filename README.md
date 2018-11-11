@@ -1,9 +1,13 @@
 # deep_learning_project_text_generation_cs_jk_jz
 Deep Learning Course Projection: Text Generation - CS, JK, JZ
 
+
+
 # README.sh
 
 ## Preprocess the dataset:
+First we downloaded the writingPrompt dataset from fairseq github repo.
+
 Note that the dataset release is the full data, but the paper models the first 1000 words of each story
 Here is some example code that can trim the dataset to the first 1000 words of each story
 
