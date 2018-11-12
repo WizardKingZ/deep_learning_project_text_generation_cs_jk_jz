@@ -55,3 +55,14 @@ Alien start abducting humans.
  It 's been a long time since I 've seen anything like this . It 's been a long time since I 've seen anything like this . It 's been a long time since I 've seen anything like this . It 's been a long time since I 've seen anything like this . It 's been a long time since I 've seen anything like this . 
 
  It 's been a long time since I 've seen anything like this . It 's been a long time since I 've seen anything like this . It 's been a long time since I 've seen anything like this . It 's been a long time since I 've seen anything like this . It 's been a long time since I 've seen anything like this .
+                                                                            
+| [wp_source] dictionary: 19025 types
+| [wp_target] dictionary: 104960 types
+| loading model(s) from pretrained_model/models/pretrained_checkpoint.pt
+| [wp_source] dictionary: 19025 types
+| [wp_target] dictionary: 104960 types
+| data-bin/writingPrompts test 15138 examples
+| ['data-bin/writingPrompts'] test 15138 examples
+num. model params: 100054400
+| Evaluated 8982054 tokens in 1600.4s (5612.55 tokens/s)                                                                             
+| Loss: 3.6169, Perplexity: 37.22
