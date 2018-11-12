@@ -22,7 +22,7 @@ Next we run the preprocess
 $ export TEXT=examples/stories/sample
 ```
 
-```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/sample --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10 --worker 4```
+```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/sample --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10 --worker 8```
 
 ```$ python train.py data-bin/sample -a fconv_self_att_wp --lr 0.25 --clip-norm 0.1 --max-tokens 1500 --lr-scheduler reduce_lr_on_plateau --decoder-attention True --encoder-attention False --criterion label_smoothed_cross_entropy --weight-decay .0000001 --label-smoothing 0 --source-lang wp_source --target-lang wp_target --gated-attention True --self-attention True --project-input True --pretrained False```
 
@@ -40,7 +40,7 @@ Here is some example code that can trim the dataset to the first 1000 words of e
 ## Binarize the dataset:
 ```$ export TEXT=examples/stories/writingPrompts```
 
-```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/writingPrompts --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10 --worker```
+```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/writingPrompts --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10 --worker 8```
 
 ## Train the model:
 Trainer.py 
