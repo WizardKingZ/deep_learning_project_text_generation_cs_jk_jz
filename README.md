@@ -18,6 +18,16 @@ Here is some example code that can trim the dataset to the first 1000 words of e
 ```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/writingPrompts --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10```
 
 ## Train the model:
+Trainer.py 
+•	Sets up the task (passed as arg) by calling one of the scripts in the folder fairseq/tasks, e.g. fairseq_task.py, translation.py, language_modeling.py  etc. Tasks store dictionaries and provide helpers for loading/iterating over datasets, initializing the Model/Criterion and calculating the loss.
+•	Initializes the data loader, pulling the dataset from the folder fairseq/data, and using arguments passed as the training parameters such as learning rate, number of batches etc. 
+•	Loads the training, validation split returned by fariseq_task.py
+•	Builds model and criterion (by calling task.build_model). Models are located in the folder fairseq/models.
+  o	For example, fairseq_model.py contains the base class for the main fusion model in this project. It takes two arguments, the encoder and the decoder, and runs the forward pass for an encoder-decoder model. First feed a batch of source tokens through the encoder. Then, feed the encoder output and previous decoder outputs (i.e., input feeding/teacher forcing) to the decoder to produce the next outputs. 
+•	Trains the specified model until learning gets too small (set by threshold min_lr) by building the Trainer (found in trainer.py) 
+  o	Trainer.py is the main class for data parallel training. This class supports synchronous distributed data parallel training, where multiple workers each have a full model replica and gradients are accumulated across workers before each update using :class:`~torch.nn.parallel.DistributedDataParallel` to handle communication of the gradients across workers.
+  o	Note: only the first validation loss is used to update the learning rate in each epoch.
+
 ```$ python train.py data-bin/writingPrompts -a cs_jk_jz_model_wp --lr 0.25 --clip-norm 0.1 --max-tokens 1500 --lr-scheduler reduce_lr_on_plateau --decoder-attention True --encoder-attention False --criterion label_smoothed_cross_entropy --weight-decay .0000001 --label-smoothing 0 --source-lang wp_source --target-lang wp_target --gated-attention True --self-attention True --project-input True --pretrained False```
 
 ## Generate:
