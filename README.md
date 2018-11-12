@@ -22,7 +22,7 @@ Next we run the preprocess
 $ export TEXT=examples/stories/sample
 ```
 
-```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/writingPrompts --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10```
+```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/writingPrompts --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10 --worker 4```
 
 
 # README.sh
@@ -38,7 +38,7 @@ Here is some example code that can trim the dataset to the first 1000 words of e
 ## Binarize the dataset:
 ```$ export TEXT=examples/stories/writingPrompts```
 
-```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/writingPrompts --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10```
+```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/writingPrompts --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10 --worker```
 
 ## Train the model:
 Trainer.py 
