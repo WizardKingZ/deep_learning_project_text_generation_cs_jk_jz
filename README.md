@@ -19,7 +19,7 @@ First we downloaded the writingPrompt dataset from fairseq github repo.
 Note that the dataset release is the full data, but the paper models the first 1000 words of each story
 Here is some example code that can trim the dataset to the first 1000 words of each story
 
-```$ python trim.py 'example/stories/writingPrompts'```
+```$ python trim.py example/stories/writingPrompts```
 
 ## Binarize the dataset:
 ```$ export TEXT=examples/stories/writingPrompts```
