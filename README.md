@@ -11,6 +11,14 @@ $ python sample.py examples/stories/writingPrompts test.wp_target test.wp_source
 $ python sample.py examples/stories/writingPrompts valid.wp_target valid.wp_source examples/stories/writingPrompts/sample
 ```
 
+Next we run the preprocess
+```
+$ export TEXT=examples/stories/sample
+```
+
+```$ python preprocess.py --source-lang wp_source --target-lang wp_target --trainpref $TEXT/train --validpref $TEXT/valid --testpref $TEXT/test --destdir data-bin/writingPrompts --padding-factor 1 --thresholdtgt 10 --thresholdsrc 10```
+
+
 # README.sh
 
 ## Preprocess the dataset:
