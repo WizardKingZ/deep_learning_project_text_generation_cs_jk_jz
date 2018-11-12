@@ -6,9 +6,9 @@ Deep Learning Course Projection: Text Generation - CS, JK, JZ
 Before using the whole writingPrompt dataset, we sampled 10% of the train, test, valid and saved in the sample folder. We used the following script to sample 10% (assume all the data is stored in examples/stories/writingPrompts
 
 ```
-$	python sample.py examples/stories/writingPrompts train.wp_target train.wp_source examples/stories/writingPrompts/sample
-$	python sample.py examples/stories/writingPrompts test.wp_target test.wp_source examples/stories/writingPrompts/sample
-$	python sample.py examples/stories/writingPrompts valid.wp_target valid.wp_source examples/stories/writingPrompts/sample
+$ python sample.py examples/stories/writingPrompts train.wp_target train.wp_source examples/stories/writingPrompts/sample
+$ python sample.py examples/stories/writingPrompts test.wp_target test.wp_source examples/stories/writingPrompts/sample
+$ python sample.py examples/stories/writingPrompts valid.wp_target valid.wp_source examples/stories/writingPrompts/sample
 ```
 
 # README.sh
