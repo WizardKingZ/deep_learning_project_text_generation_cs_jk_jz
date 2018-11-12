@@ -7,6 +7,15 @@ Deep Learning Course Projection: Text Generation - CS, JK, JZ
 * Cloned fairseq from the github repo (github.com/pytorch/fairseq)
 * All the python files are stored in the fairseq directory
 
+To get summary statistics, run
+```
+python summary.py examples/stories/sample
+```
+
+```
+python summary.py examples/stories/writingPrompts
+```
+
 # Preliminary Step
 
 Before using the whole writingPrompt dataset, we sampled 10% of the train, test, valid and saved in the sample folder. We used the following script to sample 10% (assume all the data is stored in examples/stories/writingPrompts
