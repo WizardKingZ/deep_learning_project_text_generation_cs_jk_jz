@@ -15,7 +15,7 @@ def main(args):
 	if len(args) == 4+1:
 		sample(args[1], args[2], args[3], args[4])
 	else:
-		sample(args[1], args[2], args[3], args[4], args[5])
+		sample(args[1], args[2], args[3], args[4], prob=float(args[5]))
 
 if __name__ == '__main__':
 	"""
