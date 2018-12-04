@@ -79,4 +79,4 @@ Note: to load the pretrained model at generation time, you need to pass in a mod
 
 ```$ python eval_lm.py data-bin/writingPrompts --path 'pretrained_model/models/pretrained_checkpoint.pt' --task translation --max-tokens 32```
 
-```$ python interactive.py --path pretrained_model/models/pretrained_checkpoint.pt --beam 1 --sampling --sampling-topk 10 --sampling-temperature 0.8 --nbest 1 --task translation --max-len-b 200 data-bin/writingPrompts```
+```$ python interactive.py --path pretrained_model/models/pretrained_checkpoint.pt --beam 1 --sampling --sampling-topk 10 --sampling-temperature 0.8 --nbest 1 --task translation --max-len-b 200 data-bin/writingPrompts --model-override {'pretrained_model': 'pretrained_model/models/fusion_checkpoint.pt'}```
