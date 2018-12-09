@@ -1,0 +1,11 @@
+image: image_dir/flower.jpg, caption: a white vase with yellow flowers in it
+image: image_dir/dog.jpg, caption: a dog is standing on the beach with a frisbee
+image: image_dir/cloud.jpg, caption: a plane flying in the sky over a clouds
+image: image_dir/car.jpg, caption: a group of cars driving down a street with cars
+image: image_dir/people.jpg, caption: a man in a suit and tie standing in front of a
+image: image_dir/boat.jpg, caption: a man and woman on a boat in the water
+image: image_dir/mountain.jpg, caption: a mountain view of a mountain with a mountain in the background
+image: image_dir/cat.jpg, caption: a white cat is sitting on a green grass
+image: image_dir/horse.jpg, caption: two horses are walking along the beach
+image: image_dir/house.jpg, caption: a house with a house in front of a house
+image: image_dir/plane.jpg, caption: a plane is flying through the cloudy sky

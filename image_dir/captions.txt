@@ -1,11 +1,22 @@
-image: image_dir/flower.jpg, caption: a white vase with yellow flowers in it
-image: image_dir/dog.jpg, caption: a dog is standing on the beach with a frisbee
-image: image_dir/cloud.jpg, caption: a plane flying in the sky over a clouds
-image: image_dir/car.jpg, caption: a group of cars driving down a street with cars
-image: image_dir/people.jpg, caption: a man in a suit and tie standing in front of a
-image: image_dir/boat.jpg, caption: a man and woman on a boat in the water
-image: image_dir/mountain.jpg, caption: a mountain view of a mountain with a mountain in the background
-image: image_dir/cat.jpg, caption: a white cat is sitting on a green grass
-image: image_dir/horse.jpg, caption: two horses are walking along the beach
-image: image_dir/house.jpg, caption: a house with a house in front of a house
-image: image_dir/plane.jpg, caption: a plane is flying through the cloudy sky
+image: image_dir/flower.jpg, caption: a close up of a vase with flowers in it
+image: image_dir/alian.jpg, caption: a black and white photo of a person holding a teddy bear
+image: image_dir/dog.jpg, caption: a dog with a frisbee in its mouth
+image: image_dir/cloud.jpg, caption: a plane is flying high in the sky
+image: image_dir/running.jpg, caption: a couple of young men playing a game of frisbee
+image: image_dir/car.jpg, caption: a bunch of cars driving down a street
+image: image_dir/people.jpg, caption: a close up of a person wearing a suit and tie
+image: image_dir/boat.jpg, caption: a woman on a boat in the water
+image: image_dir/peopleevacuation.jpg, caption: a group of people standing in a field
+image: image_dir/carcrash.jpg, caption: a red motorcycle parked next to a red car
+image: image_dir/mountain.jpg, caption: a view of a mountain with a mountain in the background
+image: image_dir/running2.jpg, caption: a group of people playing a game of frisbee
+image: image_dir/frisbee.jpg, caption: a group of people playing a game of frisbee
+image: image_dir/cat.jpg, caption: a white cat sitting on top of a lush green field
+image: image_dir/horse.jpg, caption: a couple of horses that are standing in the sand
+image: image_dir/house.jpg, caption: a white house with a white house in front of it
+image: image_dir/planecrash.jpg, caption: a blue and white plane is on a runway
+image: image_dir/sci1.jpg, caption: a group of people standing on top of a snow covered slope
+image: image_dir/dog2.jpg, caption: a dog catching a frisbee in its mouth
+image: image_dir/plane.jpg, caption: an airplane is flying in the cloudy sky
+image: image_dir/carcrash.jpeg, caption: a man standing next to a fire hydrant
+image: image_dir/planelanding.jpg, caption: a large airplane is flying over the water
